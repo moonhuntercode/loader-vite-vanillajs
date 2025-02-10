@@ -52,3 +52,67 @@
     background-color: #f9f9f9;
   }
 }
+/* Estilos globales */
+
+
+
+/* Contenedor del loader */
+.loader-container {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: rebeccapurple;
+}
+
+/* Loader animado */
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e0e0e0; /* Borde gris */
+  border-top: 5px solid #353535; /* Borde azul animado */
+  border-radius: 50%; /* Forma circular */
+  animation: spin 1s linear infinite; /* Animación giratoria */
+}
+
+/* Animación de giro infinito 🌀 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+  visibility: hidden; /* Oculta el elemento */
+}
+
+/* Estilos del botón Start */
+.start-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.start-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #3498db; /* Azul brillante */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+}
+
+.start-button:hover {
+  background-color: #2980b9; /* Azul más oscuro al pasar el mouse */
+}
